@@ -346,16 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5e9ade051c74e59a45d571492481bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 1843115956}
-  playImage: {fileID: 0}
-  playSecondImage: {fileID: 0}
-  careButton: {fileID: 1364109225}
-  commandButton: {fileID: 1939239625}
   placedPrefab: {fileID: 4284784927215194457, guid: cbc362f5f609c4326bf56fd659f9deaf,
-    type: 3}
-  placedBowl: {fileID: 8903377226680773380, guid: d14ac2bd42a874194876b28a20eae510,
-    type: 3}
-  placedRope: {fileID: 3358855492254678113, guid: 98506261a80c241959263fb3c1fe2caa,
     type: 3}
   arPlaneManager: {fileID: 0}
 --- !u!114 &758132665
@@ -528,16 +519,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 8903377226680773380, guid: d14ac2bd42a874194876b28a20eae510,
+          type: 3}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1364109226
 MonoBehaviour:
@@ -1036,3 +1028,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939239623}
   m_CullTransparentMesh: 0
+--- !u!1 &2090870990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090870992}
+  - component: {fileID: 2090870991}
+  m_Layer: 0
+  m_Name: CreateBowl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2090870991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090870990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7ac0fdbd74d4447b44133ad5501d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2090870992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090870990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 273.54944, y: 916.99146, z: 211.3891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
